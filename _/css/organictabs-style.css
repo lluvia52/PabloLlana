@@ -1,0 +1,57 @@
+/*
+	 Organic Tabs
+	 by Chris Coyier
+	 http://css-tricks.com
+*/
+
+* { margin: 0; padding: 0; }
+
+
+/* Generic Utility */
+.hide { position: absolute; top: -9999px; left: -9999px; }
+
+
+/* Specific to example one */
+
+#example-one { padding: 10px; margin: 0 0 20px 0;  }
+
+#example-one .nav { overflow: hidden; margin: 0 0 10px 0; float: left; width: 430px; }
+#example-one .nav li {  margin: 0 0px 10px 0; }
+#example-one .nav li.last { margin-right: 0; }
+#example-one .nav li a {   color: #000; font: normal 15px "helveticaregular"; border: 0; line-height: 25px;
+}
+#example-one .nav li a h3 {
+	font: normal 15px "helveticabold";
+	line-height: 25px;
+}
+#example-one .nav li a h4 {
+	font: normal 14px "helveticaitalic";
+	line-height: 25px;
+}
+#example-one .nav li a:hover span { background-color: #000;
+color: #fff; 	padding: 3px 7px 3px 7px;
+ }
+
+#example-one ul { list-style: none; }
+#example-one ul li a { display: block; border-bottom: 1px solid #666;  color: #666; }
+#example-one ul li:last-child a { border: none; }
+#example-one li a.current span {
+	background-color: #000;
+	color: #fff;
+	padding: 3px 7px 3px 7px;
+	}
+#example-one .list-wrap { width: 495px; padding: 10px; margin: 0 0 15px 0; float: right;
+}
+.list-wrap img{
+	margin-bottom: 10px;
+}
+.list-wrap #oaxaca {
+	text-align: center;
+}
+.list-wrap #oaxaca a {
+	display:block;
+	text-align: left;
+}
+
+/* Specific to example two */
+

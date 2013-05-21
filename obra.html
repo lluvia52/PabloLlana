@@ -1,0 +1,293 @@
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Pablo Llana</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="shortcut icon" href="_/img/favicon.ico" />
+	<!-- ICONOS IPHONE -->
+	<link rel="apple-touch-icon-precomposed" href="_/img/touch-icon-iphone.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="_/img/touch-icon-ipad.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="_/img/touch-icon-iphone4.png" />
+	<link rel="stylesheet" href="_/css/main.css" type="text/css"/>
+	
+	<script src="_/js/modernizr.custom.02144.js"></script>
+	<script src="_/js/jquery-1.8.2.min.js"></script>
+	<!-- fancybox -->
+	<script type="text/javascript" src="_/js/jquery.fancybox.js"></script>
+	<link rel="stylesheet" type="text/css" href="_/css/jquery.fancybox.css" media="screen" />
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="_/js/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="_/js/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="_/js/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="_/js/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="_/js/source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+	<!-- showcase -->
+	<link rel="stylesheet" href="_/css/style-awk.css" type="text/css"/>
+	<link rel="stylesheet" href="_/css/style-index6.css" type="text/css"/>
+	<script type="text/javascript" src="_/js/jquery.aw-showcase.min.js"></script>
+	<script type="text/javascript">
+	
+	$(document).ready(function()
+	{
+		$("#carrusel-obra").awShowcase(
+		{
+			content_height:			470,
+			fit_to_parent:			true,
+			auto:					false,
+			interval:				3000,
+			continuous:				false,
+			loading:				true,
+			tooltip_width:			200,
+			tooltip_icon_width:		32,
+			tooltip_icon_height:	32,
+			tooltip_offsetx:		18,
+			tooltip_offsety:		0,
+			arrows:					true,
+			buttons:				false,
+			btn_numbers:			true,
+			keybord_keys:			true,
+			mousetrace:				false, /* Trace x and y coordinates for the mouse */
+			pauseonover:			true,
+			stoponclick:			true,
+			transition:				'hslide', /* hslide/vslide/fade */
+			transition_speed:		500,
+			transition_delay:		300,
+			show_caption:			'onhover', /* onload/onhover/show */
+			thumbnails:				true,
+			thumbnails_position:	'outside-last', /* outside-last/outside-first/inside-last/inside-first */
+			thumbnails_direction:	'horizontal', /* vertical/horizontal */
+			thumbnails_slidex:		0, /* 0 = auto / 1 = slide one thumbnail / 2 = slide two thumbnails / etc. */
+			dynamic_height:			false, /* For dynamic height to work in webkit you need to set the width and height of images in the source. Usually works to only set the dimension of the first slide in the showcase. */
+			speed_change:			false, /* Set to true to prevent users from swithing more then one slide at once. */
+			viewline:				true /* If set to true content_width, thumbnails, transition and dynamic_height will be disabled. As for dynamic height you need to set the width and height of images in the source. It's OK with only the width. */
+	
+		});
+	});
+	
+	</script>
+	<script type="text/javascript">
+			$(document).ready(function() {
+				
+				$("#fancybox-chinglish").click(function() {
+					$.fancybox.open('_/images/individual/chinglish.jpg');
+				});
+				$("#fancybox-mouth").click(function() {
+					$.fancybox.open({
+						'href' : 'iframe-mouth.html',
+						'type' : 'iframe',
+						'height' : 900,
+						'width' : 900,
+						'autoDimensions' : false,
+						'padding' : 5
+					});
+				});	
+				$("#fancybox-acapoliptico").click(function() {
+					$.fancybox.open({
+						'href' : 'iframe-acapoliptico.html',
+						'type' : 'iframe',
+						'height' : 900,
+						'width' : 900,
+						'autoDimensions' : false,
+						'padding' : 5
+					});
+				});	
+				$("#fancybox-yocodigo").click(function() {
+					$.fancybox.open({
+						'href' : 'iframe-yocodigo.html',
+						'type' : 'iframe',
+						'height' : 900,
+						'width' : 900,
+						'autoDimensions' : false,
+						'padding' : 5
+					});
+				});	
+				$("#fancybox-huipil").click(function() {
+					$.fancybox.open({
+						'href' : 'iframe-huipil.html',
+						'type' : 'iframe',
+						'height' : 900,
+						'width' : 900,
+						'autoDimensions' : false,
+						'padding' : 5
+					});
+				});	
+				$("#fancybox-vistagorda").click(function() {
+					$.fancybox.open({
+						'href' : 'iframe-vistagorda.html',
+						'type' : 'iframe',
+						'height' : 900,
+						'width' : 900,
+						'autoDimensions' : false,
+						'padding' : 5
+					});
+				});	
+	
+			});
+		</script>
+		<style type="text/css">
+			.fancybox-custom .fancybox-skin {
+				box-shadow: 0 0 50px #222;
+			}
+		</style>
+	
+</head>
+<body>
+<header>
+	<div id="header-wp">
+		<div id="logo"><a href="index.html" class="logo">Pablo Llana</a></div>
+		<ul>
+			<li><a href="semblanza.html" >Semblanza</a></li>
+			<li><a href="avisos.html">Avisos</a></li>
+			<li><a href="publicaciones.html">Publicaciones</a></li>
+			<li><a href="obra.html" class="active last" ><img id="flecha" src="_/img/flecha.png"/>Obra</a></li>
+		</ul>
+	</div><!-- end of #header-wp -->
+</header><!-- end of #header -->
+<div id="container">
+	<div id="container-wp">
+	<div id="carrusel-obra" class="showcase" style="width: 1000px;">
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<!-- Put the slide content in a div with the class .showcase-content. -->
+			<div class="showcase-content">
+				<!-- If the slide contains multiple elements you should wrap them in a div with the class .showcase-content-wrapper. -->
+				<div class="showcase-content-wrapper">
+					<!-- As for dynamic height you need to set the width and height of images in the source for viewline to work. -->
+					<a id="fancybox-acapoliptico" href="javascript:;"><img src="_/images/obras-car/acaPOLIPTICO-01.jpg" alt="01" width="409px" height="400px" /></a>
+					<p class="static-caption">This is a static caption for this image. </p>
+				</div>
+			</div>
+			<!-- Put the thumbnail content in a div with the class .showcase-thumbnail -->
+			<div class="showcase-thumbnail">
+				<img src="_/images/obras-car/acaPOLIPTICO-01.jpg" alt="01" width="140px" />
+				<!-- The div below with the class .showcase-thumbnail-cover is used for the thumbnails active state. -->
+				<div class="showcase-thumbnail-cover"></div>
+			</div>
+		</div>
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<div class="showcase-content">
+				<div class="showcase-content-wrapper">
+					<img src="_/images/obras-car/dresstokill-01.jpg" alt="02" width="406px" height="400px" />
+					<p class="static-caption">This is also a static caption for this image.</p>
+				</div>
+			</div>
+			<div class="showcase-thumbnail">
+				<img src="_/images/obras-car/dresstokill-01.jpg" alt="01" width="140px" />
+				<div class="showcase-thumbnail-cover"></div>
+			</div>
+			<!-- Put the tooltips in a div with the class .showcase-tooltips. -->
+					</div>
+					<div class="showcase-slide">
+						<div class="showcase-content">
+							<div class="showcase-content-wrapper">
+								<a id="fancybox-yocodigo" href="javascript:;"><img src="_/images/obras-car/yocodigo-01.jpg" alt="05" width="602px" height="400px" /></a>
+								<p class="static-caption">This is a static caption for this image. </p>
+							</div>
+						</div>
+						<div class="showcase-thumbnail">
+							<img src="_/images/obras-car/yocodigo-01.jpg" alt="05" width="140px" />
+							<div class="showcase-thumbnail-cover"></div>
+						</div>
+					</div>
+					<div class="showcase-slide">
+						<div class="showcase-content">
+							<div class="showcase-content-wrapper">
+								<a id="fancybox-chinglish" href="javascript:;"><img src="_/images/obras-car/chinglish-01.jpg" alt="05" width="300px" height="400px" /></a>
+								<p class="static-caption">Titulo: Chinglish<br>
+								
+								</p>
+							</div>
+						</div>
+						<div class="showcase-thumbnail">
+							<img src="_/images/obras-car/chinglish-01.jpg" alt="05" width="140px" />
+							<div class="showcase-thumbnail-cover"></div>
+						</div>
+					</div>
+					<div class="showcase-slide">
+						<div class="showcase-content">
+							<div class="showcase-content-wrapper">
+								<a id="fancybox-mouth" href="javascript:;"><img src="_/images/obras-car/mouth-01.jpg" alt="05" width="537px" height="400px" /></a>
+								<p class="static-caption">Titulo: Chinglish<br>
+								
+								</p>
+							</div>
+						</div>
+						<div class="showcase-thumbnail">
+							<img src="_/images/obras-car/mouth-01.jpg" alt="05" width="140px" />
+							<div class="showcase-thumbnail-cover"></div>
+						</div>
+					</div>
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<div class="showcase-content">
+				<div class="showcase-content-wrapper">
+					<img src="_/images/obras-car/slim-01.jpg" alt="03" width="340px" height="400px" />
+					<p class="static-caption">Yep, this is also a static caption for this image.</p>
+				</div>
+			</div>
+			<div class="showcase-thumbnail">
+				<img src="_/images/obras-car/slim-01.jpg" alt="01" width="140px" />
+				<div class="showcase-thumbnail-cover"></div>
+			</div>
+		</div>
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<div class="showcase-content">
+				<div class="showcase-content-wrapper">
+					<a id="fancybox-huipil" href="javascript:;"><img src="_/images/obras-car/huipil-01.jpg" alt="04" width="309px" height="400px" /></a>
+					<p class="static-caption">This is a static caption for this image. </p>
+				</div>
+			</div>
+			<div class="showcase-thumbnail">
+				<img src="_/images/obras-car/huipil-01.jpg" alt="04" width="140px" />
+				<div class="showcase-thumbnail-cover"></div>
+			</div>
+		</div>
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<div class="showcase-content">
+				<div class="showcase-content-wrapper">
+					<img src="_/images/obras-car/spoil-01.jpg" alt="07" width="274px" height="400px" />
+					<p class="static-caption">This is a static caption for this image. </p>
+				</div>
+			</div>
+			<div class="showcase-thumbnail">
+				<img src="_/images/obras-car/spoil-01.jpg" alt="07" width="140px" />
+				<div class="showcase-thumbnail-cover"></div>
+			</div>
+		</div>
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<div class="showcase-content">
+				<div class="showcase-content-wrapper">
+					<a id="fancybox-vistagorda" href="javascript:;"><img src="_/images/obras-car/vistagorda-01.jpg" alt="05" width="546px" height="400px" /></a>
+					<p class="static-caption">This is a static caption for this image. </p>
+				</div>
+			</div>
+			<div class="showcase-thumbnail">
+				<img src="_/images/obras-car/vistagorda-01.jpg" alt="05" width="140px" />
+				<div class="showcase-thumbnail-cover"></div>
+			</div>
+		</div>
+				<div class="showcase-slide">
+			<div class="showcase-content">
+				<div class="showcase-content-wrapper">
+					<img src="_/images/obras-car/rev-01.jpg" alt="05" width="600px" height="400px" />
+					<p class="static-caption">This is a static caption for this image. </p>
+				</div>
+			</div>
+			<div class="showcase-thumbnail">
+				<img src="_/images/obras-car/rev-01.jpg" alt="05" width="140px" />
+				<div class="showcase-thumbnail-cover"></div>
+			</div>
+		</div>
+	</div><!-- end of #carrusel -->
+	
+	</div><!-- end of #container-wp -->
+</div><!-- end of #container -->
+</body>
+</html>
