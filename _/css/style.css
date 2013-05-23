@@ -50,7 +50,8 @@ img#flecha {
 	height: 99px;
 	background: transparent url('../img/logo.png') no-repeat left top;
 	text-indent: -999999px;
-	z-index: 2000;
+	position: relative;
+	z-index: 10000;
 	margin: 15px 0;
 }
 h1 {
@@ -93,11 +94,6 @@ h1 {
 		font-size: 17px;
 		float: right;
 		margin-top: 10px;
-	}
-
-	div.fancybox-inner {
-		height: 730px!important;
-		
 	}
 
 .nav-izq {
