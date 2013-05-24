@@ -26,7 +26,7 @@
 
 .fancybox-skin {
 	position: relative;
-	background: #faf9f4;
+	background: #f9f9f9;
 	color: #444;
 	text-shadow: none;
 	-webkit-border-radius: 4px;
@@ -39,9 +39,9 @@
 }
 
 .fancybox-opened .fancybox-skin {
-	-webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-	   -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-	        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	   -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 .fancybox-outer, .fancybox-inner {
@@ -52,20 +52,9 @@
 	overflow: hidden;
 }
 
-.fancybox-type-iframe .fancybox-skin{
-	width: 850px!important;
-	position: relative;
-	left: -20px;
-
-}
-
 .fancybox-type-iframe .fancybox-inner {
 	-webkit-overflow-scrolling: touch;
-	width: 870px!important;
-	position: relative;
-	left: -35px;
 }
-
 .fancybox-error {
 	color: #444;
 	font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -73,7 +62,6 @@
 	padding: 15px;
 	white-space: nowrap;
 }
-
 
 .fancybox-image, .fancybox-iframe {
 	display: block;
@@ -86,11 +74,8 @@
 	max-height: 100%;
 }
 
-#fancybox-loading {
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
 	background-image: url('../img/fancybox_sprite.png');
-}
-.fancybox-close, .fancybox-prev span, .fancybox-next span {
-	background-image: url('../img/sprite-icon.png');
 }
 
 #fancybox-loading {
@@ -115,10 +100,10 @@
 	position: absolute;
 	top: -18px;
 	right: -18px;
-	
+	width: 36px;
+	height: 36px;
 	cursor: pointer;
 	z-index: 8040;
-	background-position: 0 -200px; width: 40px; height: 40px;
 }
 
 .fancybox-nav {
@@ -189,8 +174,7 @@
 	overflow: hidden;
 	display: none;
 	z-index: 8010;
-	background: url('../img/fancybox_overlayy.png');
-/*	background-color: #faf9f4;*/
+	background: url('../img/fancybox_overlay.png');
 }
 
 .fancybox-overlay-fixed {
@@ -262,5 +246,3 @@
 	background: #000;
 	background: rgba(0, 0, 0, .8);
 }
-
-/* Tweak para iFrames */

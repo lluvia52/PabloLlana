@@ -46,10 +46,23 @@
 	});
 	
 	</script>
-		
+		<style type="text/css">
+		@media screen and (-webkit-min-device-pixel-ratio:0) {
+		    body {
+		    	zoom: 0.91;
+		    	margin-left: 50px;
+	/*	    	background-color: red;	    	*/
+		    	}
+		}
+		@-moz-document url-prefix() {
+		    body {
+		    	-moz-transform: scale(0.98);
+		    	}
+		}
+		</style>	
 </head>
-<body>
-<div class="show-wrapper" style="display: block; height: 670px; width: 900px; overflow: hidden; margin: 0 auto;">
+<body style="display: inline-block; height: 610px; width: 900px; overflow: hidden!important;">
+<div class="show-wrapper" style="float: left; margin-left: 40px; clear: both;">
 	<div id="showcase" class="showcase">
 		<!-- Each child div in #showcase represents a slide -->
 		<div class="showcase-slide">
