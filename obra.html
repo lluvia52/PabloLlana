@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8" />
@@ -13,17 +14,9 @@
 	
 	<script src="_/js/modernizr.custom.02144.js"></script>
 	<script src="_/js/jquery-1.8.2.min.js"></script>
-	<!-- fancybox -->
-	<script type="text/javascript" src="_/js/jquery.fancybox.js"></script>
-	<link rel="stylesheet" type="text/css" href="_/css/jquery.fancybox.css" media="screen" />
-	<!-- Add Button helper (this is optional) -->
-	<link rel="stylesheet" type="text/css" href="_/js/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
-	<script type="text/javascript" src="_/js/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-	<!-- Add Thumbnail helper (this is optional) -->
-	<link rel="stylesheet" type="text/css" href="_/js/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
-	<script type="text/javascript" src="_/js/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-	<!-- Add Media helper (this is optional) -->
-	<script type="text/javascript" src="_/js/source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+	<!-- Classybox -->
+	<link rel="stylesheet" href="_/css/jquery.classybox.css" type="text/css"/>
+	<script type="text/javascript" src="_/js/jquery.classybox.js"></script>
 	<!-- showcase -->
 	<link rel="stylesheet" href="_/css/style-awk.css" type="text/css"/>
 	<link rel="stylesheet" href="_/css/style-index6.css" type="text/css"/>
@@ -66,52 +59,45 @@
 	
 		});
 	});
-	
 	</script>
-	<script type="text/javascript">
-			$(document).ready(function() {
-				
-				$("#fancybox-chinglish").click(function() {
-					$.fancybox.open('_/images/individual/chinglish.jpg');
-				});
-				$("#fancybox-mouth").click(function() {
-					$.fancybox.open({
-						'href' : 'iframe-mouth.html',
-						'type' : 'iframe'
-					});
-				});	
-				$("#fancybox-acapoliptico").click(function() {
-					$.fancybox.open({
-						'href' : 'iframe-acapoliptico.html',
-						'type' : 'iframe'
-					});
-				});	
-				$("#fancybox-yocodigo").click(function() {
-					$.fancybox.open({
-						'href' : 'iframe-yocodigo.html',
-						'type' : 'iframe'
-					});
-				});	
-				$("#fancybox-huipil").click(function() {
-					$.fancybox.open({
-						'href' : 'iframe-huipil.html',
-						'type' : 'iframe'
-					});
-				});	
-				$("#fancybox-vistagorda").click(function() {
-					$.fancybox.open({
-						'href' : 'iframe-vistagorda.html',
-						'type' : 'iframe'
-					});
-				});	
-	
-			});
-		</script>
-		<style type="text/css">
-			.fancybox-custom .fancybox-skin {
-				box-shadow: 0 0 50px #222;
-			}
-		</style>
+	<script>
+	    $(document).ready(function() {
+	    	$("#classybox-dresstokill").ClassyBox({
+	    		social: 0
+	    		});
+	    	
+	        $("#classybox-mouth").ClassyBox({
+	            iframe: 1,
+	            social: 0,
+	            height: 700,
+	            width: 850
+	        });
+	        $("#classybox-acapoliptico").ClassyBox({
+	            iframe: 1,
+	            social: 0,
+	            height: 680,
+	            width: 850
+	        });
+	        $("#classybox-yocodigo").ClassyBox({
+	            iframe: 1,
+	            social: 0,
+	            height: 700,
+	            width: 850
+	        });
+	        $("#classybox-huipil").ClassyBox({
+	            iframe: 1,
+	            social: 0,
+	            height: 700,
+	            width: 850
+	        });
+	        $("#classybox-vistagorda").ClassyBox({
+	            iframe: 1,
+	            social: 0,
+	            height: 700,
+	            width: 850
+	        });
+	    });
+	</script>
 	
 </head>
 <body>
@@ -133,7 +119,9 @@
 		<div class="showcase-slide">
 			<div class="showcase-content">
 				<div class="showcase-content-wrapper">
-					<img src="_/images/obras-car/dresstokill-01.jpg" alt="02" width="406px" height="400px" />
+					<a id="classybox-dresstokill" href="_/images/obras-car/dresstokill-01.jpg" alt="Dress to Kill">
+						<img src="_/images/obras-car/dresstokill-01.jpg" alt="02" width="406px" height="400px" />
+					</a>
 					<p class="static-caption">Dress to kill 2010.</p>
 				</div>
 			</div>
@@ -142,10 +130,8 @@
 		<div class="showcase-slide">
 			<div class="showcase-content">
 				<div class="showcase-content-wrapper">
-					<a id="fancybox-chinglish" href="javascript:;"><img src="_/images/obras-car/chinglish-01.jpg" alt="05" width="300px" height="400px" /></a>
-					<p class="static-caption">Chinglish 2010<br>
-					
-					</p>
+					<a id="classybox-chinglish" href="javascript:;"><img src="_/images/obras-car/chinglish-01.jpg" alt="05" width="300" height="400" /></a>
+					<p class="static-caption">Chinglish 2010<br></p>
 				</div>
 			</div>
 		</div>
@@ -153,7 +139,7 @@
 		<div class="showcase-slide">
 			<div class="showcase-content">
 				<div class="showcase-content-wrapper">
-					<img src="_/images/obras-car/tepito01.jpg" alt="03" width="300px" height="400px" />
+					<img src="_/images/obras-car/tepito01.jpg" alt="03" width="300" height="400" />
 					<p class="static-caption">Totalmente Tepito 2010.</p>
 				</div>
 			</div>
@@ -161,8 +147,8 @@
 		<!-- Each child div in #showcase represents a slide -->
 		<div class="showcase-slide">
 			<div class="showcase-content">
-				<div class="showcase-content-wrapper">
-					<img src="_/images/obras-car/gaseosa-irreversible01.jpg" alt="03" width="300px" height="400px" />
+				<div class="showcase-content-wrapper"> 
+					<img src="_/images/obras-car/gaseosa-irreversible01.jpg" alt="03" width="300" height="400" />
 					<p class="static-caption">Gaseosa irreversible 2010.</p>
 				</div>
 			</div>
@@ -171,7 +157,7 @@
 		<div class="showcase-slide">
 			<div class="showcase-content">
 				<div class="showcase-content-wrapper">
-					<img src="_/images/obras-car/spoil-01.jpg" alt="07" width="274px" height="400px" />
+					<img src="_/images/obras-car/spoil-01.jpg" alt="07" width="274" height="400" />
 					<p class="static-caption">Spoil Prize 2010. </p>
 				</div>
 			</div>
@@ -180,7 +166,7 @@
 		<div class="showcase-slide">
 			<div class="showcase-content">
 				<div class="showcase-content-wrapper">
-					<img src="_/images/obras-car/slim-01.jpg" alt="03" width="340px" height="400px" />
+					<img src="_/images/obras-car/slim-01.jpg" alt="03" width="340" height="400" />
 					<p class="static-caption">Slim Fast 2010.</p>
 				</div>
 			</div>
@@ -189,7 +175,7 @@
 		<div class="showcase-slide">
 			<div class="showcase-content">
 				<div class="showcase-content-wrapper">
-					<img src="_/images/obras-car/rev-01.jpg" alt="05" width="600px" height="400px" />
+					<img src="_/images/obras-car/rev-01.jpg" alt="05" width="600" height="400" />
 					<p class="static-caption">Tijuana makes me happy 2010. </p>
 				</div>
 			</div>
@@ -198,7 +184,7 @@
 		<div class="showcase-slide">
 			<div class="showcase-content">
 				<div class="showcase-content-wrapper">
-					<a id="fancybox-acapoliptico" href="javascript:;"><img src="_/images/obras-car/acaPOLIPTICO-01.jpg" alt="01" width="409px" height="400px" /></a>
+					<a id="classybox-acapoliptico" href="iframe-acapoliptico.html"><img src="_/images/obras-car/acaPOLIPTICO-01.jpg" alt="01" width="409" height="400" /></a>
 					<p class="static-caption">Oaxaca desde acá-políptico 2011. </p>
 				</div>
 			</div>
@@ -207,7 +193,7 @@
 		<div class="showcase-slide">
 			<div class="showcase-content">
 				<div class="showcase-content-wrapper">
-					<a id="fancybox-mouth" href="javascript:;"><img src="_/images/obras-car/mouth-01.jpg" alt="05" width="537px" height="400px" /></a>
+					<a id="classybox-mouth" href="javascript:;"><img src="_/images/obras-car/mouth-01.jpg" alt="05" width="537" height="400" /></a>
 						<p class="static-caption">Inflación 2011<br>
 						</p>
 				</div>
@@ -217,7 +203,7 @@
 		<div class="showcase-slide">
 			<div class="showcase-content">
 				<div class="showcase-content-wrapper">
-					<a id="fancybox-huipil" href="javascript:;"><img src="_/images/obras-car/huipil-01.jpg" alt="04" width="309px" height="400px" /></a>
+					<a id="classybox-huipil" href="javascript:;"><img src="_/images/obras-car/huipil-01.jpg" alt="04" width="309" height="400" /></a>
 					<p class="static-caption">Huipil Fronterizo 2011. </p>
 				</div>
 			</div>
@@ -226,7 +212,7 @@
 		<div class="showcase-slide">
 			<div class="showcase-content">
 				<div class="showcase-content-wrapper">
-					<a id="fancybox-vistagorda" href="javascript:;"><img src="_/images/obras-car/vistagorda-01.jpg" alt="05" width="546px" height="400px" /></a>
+					<a id="classybox-vistagorda" href="javascript:;"><img src="_/images/obras-car/vistagorda-01.jpg" alt="05" width="546" height="400" /></a>
 					<p class="static-caption">Hazte de la vista gorda 2011. </p>
 				</div>
 			</div>
@@ -235,7 +221,7 @@
 		<div class="showcase-slide">
 			<div class="showcase-content">
 				<div class="showcase-content-wrapper">
-					<a id="fancybox-vistagorda" href="javascript:;"><img src="_/images/obras-car/zip-lock01.jpg" alt="05" width="557px" height="400px" /></a>
+					<a id="classybox-vistagorda" href="javascript:;"><img src="_/images/obras-car/zip-lock01.jpg" alt="05" width="557" height="400" /></a>
 					<p class="static-caption">Zip-lock 2011. </p>
 				</div>
 			</div>
@@ -244,7 +230,7 @@
 		<div class="showcase-slide">
 			<div class="showcase-content">
 				<div class="showcase-content-wrapper">
-					<a id="fancybox-vistagorda" href="javascript:;"><img src="_/images/obras-car/split01.jpg" alt="05" width="533px" height="400px" /></a>
+					<a id="classybox-vistagorda" href="javascript:;"><img src="_/images/obras-car/split01.jpg" alt="05" width="533" height="400" /></a>
 					<p class="static-caption">Won't split 2011. </p>
 				</div>
 			</div>
@@ -253,7 +239,7 @@
 		<div class="showcase-slide">
 			<div class="showcase-content">
 				<div class="showcase-content-wrapper">
-					<a id="fancybox-vistagorda" href="javascript:;"><img src="_/images/obras-car/empanadas01.jpg" alt="05" width="542px" height="400px" /></a>
+					<a id="classybox-vistagorda" href="javascript:;"><img src="_/images/obras-car/empanadas01.jpg" alt="05" width="542" height="400" /></a>
 					<p class="static-caption">Empanadas 2011. </p>
 				</div>
 			</div>
@@ -262,7 +248,7 @@
 		<div class="showcase-slide">
 			<div class="showcase-content">
 				<div class="showcase-content-wrapper">
-					<img src="_/images/obras-car/blessing01.jpg" alt="05" width="511px" height="400px" /></a>
+					<img src="_/images/obras-car/blessing01.jpg" alt="05" width="511" height="400" /></a>
 					<p class="static-caption">The blessing 2012. </p>
 				</div>
 			</div>
@@ -271,7 +257,7 @@
 		<div class="showcase-slide">
 			<div class="showcase-content">
 				<div class="showcase-content-wrapper">
-					<a id="fancybox-vistagorda" href="javascript:;"><img src="_/images/obras-car/canasta-basica01.jpg" alt="05" width="610px" height="400px" /></a>
+					<a id="classybox-vistagorda" href="javascript:;"><img src="_/images/obras-car/canasta-basica01.jpg" alt="05" width="610" height="400" /></a>
 					<p class="static-caption">The blessing 2012. </p>
 				</div>
 			</div>
@@ -280,7 +266,7 @@
 		<div class="showcase-slide">
 			<div class="showcase-content">
 				<div class="showcase-content-wrapper">
-					<a id="fancybox-vistagorda" href="javascript:;"><img src="_/images/obras-car/viacrucis01.jpg" alt="05" width="277px" height="400px" /></a>
+					<a id="classybox-vistagorda" href="javascript:;"><img src="_/images/obras-car/viacrucis01.jpg" alt="05" width="277" height="400" /></a>
 					<p class="static-caption">Viacrucis 2012. </p>
 				</div>
 			</div>
@@ -289,7 +275,7 @@
 		<div class="showcase-slide">
 			<div class="showcase-content">
 				<div class="showcase-content-wrapper">
-					<img src="_/images/obras-car/llantas01.jpg" alt="05" width="533px" height="400px" /></a>
+					<img src="_/images/obras-car/llantas01.jpg" alt="05" width="533" height="400" /></a>
 					<p class="static-caption">Se ponchan llantas gratis 2012. </p>
 				</div>
 			</div>
@@ -298,7 +284,7 @@
 		<div class="showcase-slide">
 			<div class="showcase-content">
 				<div class="showcase-content-wrapper">
-					<img src="_/images/obras-car/mela-como01.jpg" alt="05" width="522px" height="400px" /></a>
+					<img src="_/images/obras-car/mela-como01.jpg" alt="05" width="522" height="400" /></a>
 					<p class="static-caption">Me la como 2012. </p>
 				</div>
 			</div>
@@ -307,7 +293,7 @@
 		<div class="showcase-slide">
 			<div class="showcase-content">
 				<div class="showcase-content-wrapper">
-					<img src="_/images/obras-car/mouth01.jpg" alt="05" width="531px" height="400px" /></a>
+					<img src="_/images/obras-car/mouth01.jpg" alt="05" width="531" height="400" /></a>
 					<p class="static-caption">Double the pleasure, double the fun 2012. </p>
 				</div>
 			</div>
@@ -316,7 +302,7 @@
 		<div class="showcase-slide">
 			<div class="showcase-content">
 				<div class="showcase-content-wrapper">
-					<img src="_/images/obras-car/guilty01.jpg" alt="05" width="266px" height="400px" /></a>
+					<img src="_/images/obras-car/guilty01.jpg" alt="05" width="266" height="400" /></a>
 					<p class="static-caption">Guilty Pleasure 2012. </p>
 				</div>
 			</div>
@@ -325,7 +311,7 @@
 		<div class="showcase-slide">
 			<div class="showcase-content">
 				<div class="showcase-content-wrapper">
-					<img src="_/images/obras-car/chewed01.jpg" alt="05" width="365px" height="400px" /></a>
+					<img src="_/images/obras-car/chewed01.jpg" alt="05" width="365" height="400" /></a>
 					<p class="static-caption">Chewed Landscape 2012. </p>
 				</div>
 			</div>
@@ -333,7 +319,7 @@
 		<div class="showcase-slide">
 					<div class="showcase-content">
 						<div class="showcase-content-wrapper">
-							<a id="fancybox-vistagorda" href="javascript:;"><img src="_/images/obras-car/chico-embarazado01.jpg" alt="05" width="537px" height="400px" /></a>
+							<a id="classybox-vistagorda" href="javascript:;"><img src="_/images/obras-car/chico-embarazado01.jpg" alt="05" width="537" height="400" /></a>
 							<p class="static-caption">Chico Embarazado 2012. </p>
 						</div>
 					</div>
@@ -342,7 +328,7 @@
 				<div class="showcase-slide">
 					<div class="showcase-content">
 						<div class="showcase-content-wrapper">
-							<img src="_/images/obras-car/comida-chatarra01.jpg" alt="03" width="602px" height="400px" />
+							<img src="_/images/obras-car/comida-chatarra01.jpg" alt="03" width="602" height="400" />
 							<p class="static-caption">Couch Potatoe I,II y III 2013.</p>
 						</div>
 					</div>
@@ -351,7 +337,7 @@
 				<div class="showcase-slide">
 					<div class="showcase-content">
 						<div class="showcase-content-wrapper">
-							<a id="fancybox-yocodigo" href="javascript:;"><img src="_/images/obras-car/yocodigo-01.jpg" alt="05" width="602px" height="400px" /></a>
+							<a id="classybox-yocodigo" href="javascript:;"><img src="_/images/obras-car/yocodigo-01.jpg" alt="05" width="602" height="400" /></a>
 								<p class="static-caption">Sofismo 2013. </p>
 						</div>
 					</div>
