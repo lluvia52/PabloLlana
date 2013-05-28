@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8" />
@@ -15,22 +15,14 @@
 	<script src="_/js/jquery-ui-1.8.20.custom.min.js"></script>
 	<script src="_/js/modernizr.custom.02144.js"></script>
 	<script src="_/js/jquery-1.8.2.min.js"></script>
+	<!-- organictabs -->
+	<link rel="stylesheet" href="_/css/organictabs-style.css" type="text/css"/>
 	<script src="_/js/organictabs.jquery.js"></script>
+	<!-- scroollbox -->
 	<script src="_/js/jquery.jscrollpane.min.js"></script>
-	<!-- fancybox -->
-	<script type="text/javascript" src="_/js/jquery.fancybox.js"></script>
-	<link rel="stylesheet" type="text/css" href="_/css/jquery.fancybox.css" media="screen" />
-		<!-- Add Button helper (this is optional) -->
-		<link rel="stylesheet" type="text/css" href="_/js/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
-		<script type="text/javascript" src="_/js/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-	
-		<!-- Add Thumbnail helper (this is optional) -->
-		<link rel="stylesheet" type="text/css" href="_/js/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
-		<script type="text/javascript" src="_/js/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-	
-		<!-- Add Media helper (this is optional) -->
-		<script type="text/javascript" src="_/js/source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
-	
+	<!-- Classybox -->
+	<link rel="stylesheet" href="_/css/jquery.classybox.css" type="text/css"/>
+	<script type="text/javascript" src="_/js/jquery.classybox.js"></script>		
 	<script>
 	$(document).ready(function () {
 	    if (!$.browser.webkit) {
@@ -45,17 +37,13 @@
 	    $(document).ready(function() {
 	    		
 	    
-	    			$("#fancybox-pdf-b").click(function() {
-	    				$.fancybox.open({
-	    					'href' : 'iframepdf.html',
-	    					'type' : 'iframe',
-	    					'height' : 900,
-	    					'width' : 1000,
-	    					'autoDimensions' : false,
-	    					'padding' : 5
-	    				});
-	    			});	
-	    
+	    			$("#classybox-pdf").ClassyBox({
+	    			    iframe: 1,
+	    			    social: 0,
+	    			    height: 680,
+	    			    width: 1025
+	    			});
+	    				    
 	    		});
 	</script>
 	
@@ -124,7 +112,7 @@
 		<div class="list-wrap">
 			<div id="featured">
 			<img src="_/images/publicaciones/yocodigo.jpg"/>
-			<a id="fancybox-pdf-b" href="javascript:;">[ ver más ]</a>
+			<a id="classybox-pdf" href="iframepdf.html">[ ver más ]</a>
 			</div>
 			 
 			<div id="core" class="hide">

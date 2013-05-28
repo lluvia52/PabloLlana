@@ -31,7 +31,9 @@
 #example-one .nav li a:hover span { background-color: #000;
 color: #fff; 	padding: 3px 7px 3px 7px;
  }
-
+#example-one ul.menu li {
+	display: inline;
+}
 #example-one ul { list-style: none; }
 #example-one ul li a { display: block; border-bottom: 1px solid #666;  color: #666; }
 #example-one ul li:last-child a { border: none; }
@@ -55,3 +57,17 @@ color: #fff; 	padding: 3px 7px 3px 7px;
 
 /* Specific to example two */
 
+#example-two .nav li {
+	display: inline-block;
+	width: 50px;
+}
+#example-two .nav li a span {
+	padding: 5px;
+}
+#example-two .nav li a.current {
+	color: #fff; font: normal 15px "helveticaregular"; border: 0; line-height: 25px;
+}
+#example-two .nav li a.current span {
+	background-color: #000;
+	padding: 5px;
+}
