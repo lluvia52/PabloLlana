@@ -105,17 +105,17 @@
 		}
 		
 		/* Styling the caption */
-		.showcase-caption
+		/*.showcase-caption
 		{
 			color: #faf9f4;
-			font: normal 20px "helveticaregular";
+			font: normal 10pt "helveticaregular";
 			padding: 8px 15px;
 			text-align: left;
 			position: absolute;
 			bottom: 10px; left: 10px; right: 10px;
 			display: none;
 			/*background-image: url(../images/white-opacity-80.png);*/
-		}
+		}*/
 		.cap-right {
 			padding-left: 165px;
 		}
@@ -304,11 +304,11 @@
 			display: none;
 		}
 		.showcase-caption { color: #fff; 
-			height: 40px; 
+			height: 65px; 
 			width: 700px; 
-			font: normal 10px "helveticalight";
-			font-weight: normal;
-			padding: 8px 15px; 
+			font: normal 11px "helveticalight";
+			
+			padding: 0px 15px; 
 			text-align: left; 
 			position: absolute; 
 			bottom: 0px; 
@@ -318,11 +318,15 @@
 			background-color: #faf9f4;  
 			/*background-image: url(../images/white-opacity-80.png);*/ 
 			}
+		.showcase-caption h2 {
+		margin-right: 20px;
+		}
 		.showcase-caption h2 span {
 			background-color: #000;
 			padding: 5px;
+			line-height: 150%;
 			}		
-	
+		
 
 
 /* Clear (used for horizontal thumbnails)
