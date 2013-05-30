@@ -36,20 +36,32 @@
 			$("#classybox-chinglish").ClassyBox({
 				social: 0
 				});
-			$("#classybox-catapultalista").ClassyBox({
-				social: 0
+			$("#classybox-tronos").ClassyBox({
+				iframe: 1,
+				social: 0,
+				height: 610,
+				width: 850
 				});
 			$("#classybox-vistag").ClassyBox({
-				social: 0
+				iframe: 1,
+				social: 0,
+				height: 660,
+				width: 850
 				});
 			$("#classybox-slima").ClassyBox({
-				social: 0
+				iframe: 1,
+				social: 0,
+				height: 680,
+				width: 850
 				});
 			$("#classybox-oaxaca").ClassyBox({
 				social: 0
 				});
 			$("#classybox-espora").ClassyBox({
-				social: 0
+				iframe: 1,
+				social: 0,
+				height: 680,
+				width: 850
 				});
 			$("#classybox-add").ClassyBox({
 			   iframe: 1,
@@ -73,12 +85,14 @@
 	</script>
 	</head>
 <body>
+<div id="ultra-wp">
 <header>
 	<div id="header-wp">
 		<div id="logo"><a href="index.html" class="logo">Pablo Llana</a></div>
+		<a id="mail" href="mailto:someone@example.com"><img alt="Mail to" src="_/images/mailto.png"/></a>
 		<ul>
 			<li><a href="index.html">Semblanza</a></li>
-			<li><a href="avisos.html" class="active" ><img id="flecha" src="_/img/flecha.png"/>Avisos</a></li>
+			<li><a href="avisos.html" class="active" ><img id="flecha" alt="Flecha" src="_/images/flecha.png"/>Avisos</a></li>
 			<li><a href="publicaciones.html">Publicaciones</a></li>
 			<li><a href="obra.html" class="last">Obra</a></li>
 		</ul>
@@ -139,63 +153,63 @@
 		<div class="list-wrap">
 			<div id="featured">
 				<div class="imagen">
-					<img src="_/img/trono-cartel-a.jpg" alt="Trono de los de a pie"/>
+					<img src="_/images/avisos/trono-cartel-a.jpg" alt="Trono de los de a pie"/>
 				</div>
-				<a id="classybox-catapultalista" href="_/images/individual/catapultalista.jpg">[ ver más ]</a>
+				<a id="classybox-tronos" href="iframe-tronos.html">[ ver más ]</a>
 			</div>
 			
 			<div id="core" class="hide">
 				<div class="imagen">
-					<img src="_/img/cartel-yo-a.jpg" alt="yo código comunidad"/>
+					<img src="_/images/avisos/cartel-yo-a.jpg" alt="Yo código comunidad"/>
 				</div>
 				<a id="classybox-codigo" href="iframe-codigo.html">[ ver más ]</a>
 			</div>
 			
 			<div id="jquerytuts" class="hide">
 				<div class="imagen">
-					<img src="_/img/add.jpg" alt="Arte Al Día Mexico AAD"/>
+					<img src="_/images/avisos/add.jpg" alt="Arte Al Día Mexico AAD"/>
 				</div>
 				<a id="classybox-add" href="iframepdf.html">[ ver más ]</a>
 			</div>
 			
 			<div id="mouthful" class="hide">
 				<div class="imagen">	
-					<img src="_/img/mouthful-00-a.jpg" alt="2013 Mouthful"/>
+					<img src="_/images/avisos/mouthful-00-a.jpg" alt="2013 Mouthful"/>
 				</div>
 				<a id="classybox-mouthful" href="iframe-mouthful.html">[ ver más ]</a>
 			</div>
 			
 			<div id="miradas2012" class="hide">
 				<div class="imagen horizontal">
-					<img src="_/img/vista-gorda-a.jpg" alt="miradas 2012"/>
+					<img src="_/images/avisos/vista-gorda-a.jpg" alt="Miradas 2012"/>
 				</div>
-				<a id="classybox-vistag" href="_/images/individual/vistagorda-detalles.jpg">[ ver más ]</a>
+				<a id="classybox-vistag" href="iframe-vistagorda-a.html">[ ver más ]</a>
 			</div>
 			
 			<div id="espora" class="hide">
 				<div class="imagen">
-					<img src="_/img/espora-a.jpg" alt="2012 Espora"/>
+					<img src="_/images/avisos/espora-a.jpg" alt="2012 Espora"/>
 				</div>
-				<a id="classybox-espora" href="_/images/individual/espora-montaje.jpg">[ ver más ]</a>
+				<a id="classybox-espora" href="iframe-espora.html">[ ver más ]</a>
 			</div>
 			
 			<div id="bienalplástica" class="hide">
 				<div class="imagen">
-					<img src="_/img/totalmente-a.jpg" alt="XVIII Bienal Plástica"/>
+					<img src="_/images/avisos/totalmente-a.jpg" alt="XVIII Bienal Plástica"/>
 				</div>
-			<a id="classybox-slima" href="_/images/individual/slima.jpg">[ ver más ]</a>
+			<a id="classybox-slima" href="iframe-bienal.html">[ ver más ]</a>
 			</div>
 			
 			<div id="13vabienal" class="hide">
 				<div class="imagen">
-					<img src="_/img/chinglish-a.jpg" alt="13va Bienal de Artes Visuales del Noroeste"/>
+					<img src="_/images/avisos/chinglish-a.jpg" alt="13va Bienal de Artes Visuales del Noroeste"/>
 				</div>
 			<a id="classybox-chinglish" href="_/images/individual/chinglish.jpg">[ ver más ]</a>
 			</div>
 			
 			<div id="oaxaca" class="hide">
 				<div class="imagen">
-					<img src="_/img/poster-a.jpg" alt="9a propuesta Museo Textil de Oaxaca"/>
+					<img src="_/images/avisos/poster-a.jpg" alt="9a propuesta Museo Textil de Oaxaca"/>
 				</div>
 			<a id="classybox-oaxaca" href="_/images/individual/oaxaca.jpg">[ ver más ]</a>
 			</div>
@@ -203,5 +217,6 @@
 		</div> <!-- END Organic Tabs (Example One) -->
 	</div><!-- END Container-wp -->
 </div><!-- END Container -->
+</div><!-- END ultra-wp -->
 </body>
 </html>
