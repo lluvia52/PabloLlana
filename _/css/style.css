@@ -13,9 +13,17 @@ body {
 background-color: #faf9f4;
 font: normal 15px "helveticaregular";
 }
-#header-wp, #container-wp {
+#header-wp, #container-wp, #contenedor {
 	width: 1000px;
 	margin: 0 auto;
+}
+#header-wp {
+	position: relative;
+}
+a#mail {
+	position: absolute;
+	top: 0px;
+	right: 30px;
 }
 header ul li {
 	display: inline-block;
@@ -46,7 +54,18 @@ img#flecha {
 	top: -15px;
 	left: -30px;
 }
-
+#contenedor {
+	margin-top: 150px;
+}
+#links {
+	text-align: center;
+	margin-top: 50px;
+}
+#links ul li {
+	margin: 0 50px;
+	font: normal 30px "helveticaregular";
+	display: inline;
+}
 .logo {
 	display: block;
 	width: 195px;
