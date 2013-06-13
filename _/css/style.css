@@ -1,6 +1,3 @@
-#ultra-wp {
-	padding: 30px;
-}
 a {
 	font: normal 15px "helveticaregular";
 	color: #000;
@@ -55,8 +52,15 @@ img#flecha {
 	left: -30px;
 }
 #contenedor {
-	margin-top: 150px;
-}
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 800px;
+	height: 500px;
+	margin-top: -250px; /* Half the height */
+	margin-left: -400px; /* Half the width */
+	overflow: hidden;
+	}
 #links {
 	text-align: center;
 	margin-top: 50px;

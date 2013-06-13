@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8" />
-	<title>Pablo Llana</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	<title>Pablo Llana</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<link rel="shortcut icon" href="_/img/favicon.ico" />
@@ -15,29 +13,6 @@
 	
 	<script src="_/js/modernizr.custom.02144.js"></script>
 	<script src="_/js/jquery-1.8.2.min.js"></script>
-	<!-- scroollbox -->
-	<script src="_/js/jquery.jscrollpane.min.js"></script>
-	<!-- Classybox -->
-	<link rel="stylesheet" href="_/css/jquery.classybox.css" type="text/css"/>
-	<script type="text/javascript" src="_/js/jquery.classybox.js"></script>	
-	<script type="text/javascript">
-	$(document).ready(function () {
-	    if (!$.browser.webkit) {
-	        $('#texto-izq').jScrollPane();
-	    }
-	});
-			$(document).ready(function() {
-			
-	
-				$("#classybox-semblanza").ClassyBox({
-				    iframe: 1,
-				    social: 0,
-				    height: 680,
-				    width: 850
-				});
-	
-			});
-		</script>
 </head>
 <body>
 <div id="ultra-wp">
@@ -70,12 +45,73 @@
 	</div><!-- end of #texto -->
 	<div id="der">
 	<img src="_/images/semblanza-1.jpg" alt="Pablo Llana"/>
-	<a id="classybox-semblanza" href="iframe.html">[ ver más ]</a>
+	<a id="fancybox-semblanza" href="javascript:;">[ ver más ]</a>
 	<h2>Stefan Falke</h2>
 	</div><!-- end of #der -->
 	</div><!-- end of #container-wp -->
 </div><!-- end of #container -->
 </div><!-- end of #ultra-wp -->
+<!-- scroollbox -->
+<script src="_/js/jquery.jscrollpane.min.js"></script>
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="_/js/fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="_/js/fancybox/source/jquery.fancybox.js?v=2.1.4"></script>
+<link rel="stylesheet" type="text/css" href="_/js/fancybox/source/jquery.fancybox.css?v=2.1.4" media="screen" />
 
+<!-- Add Button helper (this is optional) -->
+<link rel="stylesheet" type="text/css" href="_/js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+<script type="text/javascript" src="_/js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+<!-- Add Thumbnail helper (this is optional) -->
+<link rel="stylesheet" type="text/css" href="_/js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+<script type="text/javascript" src="_/js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+<!-- Add Media helper (this is optional) -->
+<script type="text/javascript" src="_/js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    if (!$.browser.webkit) {
+        $('#texto-izq').jScrollPane();
+    }
+    $("#fancybox-semblanza").click(function() {
+    	$.fancybox.open([
+    		{
+    			href : '_/images/05.jpg',
+    			title : '<span><strong>Stefan Falke</strong></span>'
+    		},
+    		{
+    			href : '_/images/01.jpg',
+    			title : '<span><strong>Giancarlo Ruiz</strong></span>'
+    		},
+    		{
+    			href : '_/images/04.jpg',
+    			title : '<span><strong>Stefan Falke</strong></span>'
+    		},
+    		{
+    			href : '_/images/03.jpg',
+    			title : '<span><strong>Felizardo Búrquez</strong></span>'
+    		},
+    		{
+    			href : '_/images/02.jpg',
+    			title : '<span><strong>Stefan Falke</strong></span>'
+    		}
+    	], {
+    		helpers : {
+    			title : {
+    				type : 'inside'
+    			},
+    			 
+    			thumbs : {
+    				width: 100,
+    				height: 100
+    			}
+    		}
+    	});
+    });
+    
+});
+
+	</script>
 </body>
 </html>
