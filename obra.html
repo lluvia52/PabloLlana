@@ -72,6 +72,24 @@
 					<div class="showcase-slide">
 						<div class="showcase-content">
 							<div class="showcase-content-wrapper">
+								<a id="fancybox-couchiv" href="_/images/individual/couch42.jpg" ><div class="mas"></div><img src="_/images/obras-car/couch41.jpg" alt="Couch Potatoe I,II y III" width="400" height="400" /></a>
+								<p class="static-caption">Couch Potatoe IV 2013.</p>
+							</div>
+						</div>
+					</div>
+					<!-- Each child div in #showcase represents a slide -->
+					<div class="showcase-slide">
+						<div class="showcase-content">
+							<div class="showcase-content-wrapper">
+								<a id="fancybox-couchv" href="_/images/individual/couch52.jpg" ><div class="mas"></div><img src="_/images/obras-car/couch51.jpg" alt="Couch Potatoe I,II y III" width="477" height="400" /></a>
+								<p class="static-caption">Couch Potatoe V 2013.</p>
+							</div>
+						</div>
+					</div>
+					<!-- Each child div in #showcase represents a slide -->
+					<div class="showcase-slide">
+						<div class="showcase-content">
+							<div class="showcase-content-wrapper">
 								<a id="fancybox-yocodigo" href="javascript:;"><div class="mas"></div><img src="_/images/obras-car/yocodigo-01.jpg" alt="Sofismo" width="602" height="400" /></a>
 									<p class="static-caption">Sofismo 2013. </p>
 							</div>
@@ -109,11 +127,20 @@
 				 				</div>
 				 			</div>
 				 		</div>
+				 		<div class="showcase-slide">
+				 			<div class="showcase-content">
+				 				<div class="showcase-content-wrapper">
+				 					<a id="fancybox-hansel" href="javascript:;"><div class="mas"></div><img src="_/images/obras-car/hansel1.jpg" alt="Hansel y Gretel" width="528" height="400" /></a>
+				 					<p class="static-caption">Hansel y Gretel 2012. </p>
+				 				</div>
+				 			</div>
+				 		</div>
+				 		
 				 		<!-- Each child div in #showcase represents a slide -->
 				 		<div class="showcase-slide">
 				 			<div class="showcase-content">
 				 				<div class="showcase-content-wrapper">
-				 					<a id="fancybox-canasta" href="_/images/individual/canasta-basica.jpg"><div class="mas"></div><img src="_/images/obras-car/canasta-basica01.jpg" alt="Canasta Basica" width="610" height="400" /></a>
+				 					<a id="fancybox-canasta" href="javascript:;"><div class="mas"></div><img src="_/images/obras-car/canasta-basica01.jpg" alt="Canasta Basica" width="610" height="400" /></a>
 				 					<p class="static-caption">Canasta Basica 2012. </p>
 				 				</div>
 				 			</div>
@@ -151,6 +178,30 @@
 				 				<div class="showcase-content-wrapper">
 				 					<a id="fancybox-double" href="javascript:;"><div class="mas"></div><img src="_/images/obras-car/mouth01.jpg" alt="Double the preasure, double the fun" width="531" height="400" /></a>
 				 					<p class="static-caption">Double the pleasure, double the fun 2012. </p>
+				 				</div>
+				 			</div>
+				 		</div>
+				 		<div class="showcase-slide">
+				 			<div class="showcase-content">
+				 				<div class="showcase-content-wrapper">
+				 					<a id="fancybox-perrea" href="_/images/individual/perrea2.jpg" ><div class="mas"></div><img src="_/images/obras-car/perrea1.jpg" alt="Perrea" width="600" height="400" /></a>
+				 					<p class="static-caption">Perrea 2012. </p>
+				 				</div>
+				 			</div>
+				 		</div>
+				 		<div class="showcase-slide">
+				 			<div class="showcase-content">
+				 				<div class="showcase-content-wrapper">
+				 					<a id="fancybox-tapete" href="javascript:;" ><div class="mas"></div><img src="_/images/obras-car/tapete1.jpg" alt="Tapete hipnótico" width="546" height="400" /></a>
+				 					<p class="static-caption">Tapete hipnótico 2012. </p>
+				 				</div>
+				 			</div>
+				 		</div>
+				 		<div class="showcase-slide">
+				 			<div class="showcase-content">
+				 				<div class="showcase-content-wrapper">
+				 					<a id="fancybox-violencia" href="_/images/individual/violencia2.jpg" ><div class="mas"></div><img src="_/images/obras-car/violencia1.jpg" alt="Violencia oral" width="582" height="400" /></a>
+				 					<p class="static-caption">Violencia oral 2012. </p>
 				 				</div>
 				 			</div>
 				 		</div>
@@ -491,7 +542,23 @@
 	     $("#example-two").organicTabs();
 //	    	Carrusel 2013	    
 	    	$("#fancybox-couch").fancybox({
-	    		title: '<span><strong>Couch Potatoe I,II y III.</strong> Cubos de envolturas de comida chatarra, comprimida. 2013</span>',
+	    		title: '<span><strong>Couch Potatoe I,II y III.</strong> Cubos de envolturas de comida chatarra, comprimida, 35 x 35 x 35 cm. 2013</span>',
+	    		helpers : {
+	    			title : {
+	    				type : 'inside'
+	    			}
+	    		}
+	    	});
+	    	$("#fancybox-couchiv").fancybox({
+	    		title: '<span><strong>Couch Potatoe IV.</strong> Cubos de envolturas de comida chatarra, comprimida, 35 x 35 x 35 cm. 2013 Colección Inge Johansen.</span>',
+	    		helpers : {
+	    			title : {
+	    				type : 'inside'
+	    			}
+	    		}
+	    	});
+	    	$("#fancybox-couchv").fancybox({
+	    		title: '<span><strong>Couch Potatoe V.</strong> Cubos de envolturas de comida chatarra, comprimida, 35 x 35 x 35 cm. 2013 Colección Inge Johansen.</span>',
 	    		helpers : {
 	    			title : {
 	    				type : 'inside'
@@ -559,14 +626,14 @@
 	    				}
 	    			});
 //	    	Carrusel 2012
-			$("#fancybox-blessing").click(function() {
+			$("#fancybox-hansel").click(function() {
 				$.fancybox.open([
 					{
-						href : '_/images/mouth/mouth-04.jpg',
-						title : '<span><strong>The blessing.</strong> Envolturas de comida chatarra recicladas sobre tela, 190x139cm 2012.</span>'
+						href : '_/images/hansel/hansel-detalle.jpg',
+						title : '<span><strong>Hansel y Gretel.</strong> Envolturas de comida chatarra recicladas, sobre tela,  76x127cm 2012.</span>'
 					}, {
-						href : '_/images/mouth/mouth-04d.jpg',
-						title : '<span><strong>The blessing.</strong> Envolturas de comida chatarra recicladas sobre tela, 190x139cm 2012.</span>'
+						href : '_/images/hansel/hansel2.jpg',
+						title : '<span><strong>Hansel y Gretel.</strong> Envolturas de comida chatarra recicladas, sobre tela, 76x127cm 2012.</span>'
 					}
 				], {
 					helpers : {
@@ -581,14 +648,51 @@
 					}
 				});
 			});
-	    	$("#fancybox-canasta").fancybox({
-	    		title: '<span><strong>Canasta básica.</strong> Envolturas de comida chatarra recicladas comprimidas, 6 botellas de la medida de un refresco de 3 litros c/u. 2012</span>',
-	    		helpers : {
-	    			title : {
-	    				type : 'inside'
-	    			}
-	    		}
-	    	});
+			$("#fancybox-blessing").click(function() {
+				$.fancybox.open([
+					{
+						href : '_/images/mouth/mouth-04.jpg',
+						title : '<span><strong>The blessing.</strong> Envolturas de comida chatarra recicladas sobre tela, 190x139cm 2012 Colección Privada.</span>'
+					}, {
+						href : '_/images/mouth/mouth-04d.jpg',
+						title : '<span><strong>The blessing.</strong> Envolturas de comida chatarra recicladas sobre tela, 190x139cm 2012 Colección Privada.</span>'
+					}
+				], {
+					helpers : {
+						title : {
+							type : 'inside'
+						},
+						 
+						thumbs : {
+							width: 100,
+							height: 100
+						}
+					}
+				});
+			});
+			$("#fancybox-canasta").click(function() {
+				$.fancybox.open([
+					{
+						href : '_/images/canasta/canasta-basica.jpg',
+						title : '<span><strong>Canasta básica.</strong> Envolturas de comida chatarra recicladas comprimidas, 6 botellas de la medida de un refresco de 3 litros c/u. 2012.</span>'
+					}, {
+						href : '_/images/canasta/canasta2.jpg',
+						title : '<span><strong>Canasta básica.</strong> Envolturas de comida chatarra recicladas comprimidas, 6 botellas de la medida de un refresco de 3 litros c/u. 2012 Colección Gillian Flyn.</span>'
+					}
+				], {
+					helpers : {
+						title : {
+							type : 'inside'
+						},
+						 
+						thumbs : {
+							width: 100,
+							height: 100
+						}
+					}
+				});
+			});
+	    	
 	    	$("#fancybox-viacrucis").click(function() {
 	    		$.fancybox.open([
 	    			{
@@ -672,6 +776,45 @@
 	    				}
 	    			}
 	    		});
+	    	});
+	    	$("#fancybox-tapete").click(function() {
+	    		$.fancybox.open([
+	    			{
+	    				href : '_/images/tapete/tapete-detalle.jpg',
+	    				title : '<span><strong>Tapete hipnótico.</strong> Envolturas de comida chatarra recicladas, sobre tela. 190x139cm. 2012</span>'
+	    			}, {
+	    				href : '_/images/tapete/tapete2.jpg',
+	    				title : '<span><strong>Tapete hipnótico.</strong> Envolturas de comida chatarra recicladas, sobre tela. 190x139cm. 2012</span>'
+	    			}
+	    		], {
+	    			helpers : {
+	    				title : {
+	    					type : 'inside'
+	    				},
+	    				thumbs : {
+	    					width: 100,
+	    					height: 100
+	    				}
+	    			}
+	    		});
+	    	});
+	    	
+	    	$("#fancybox-perrea").fancybox({
+	    		title: '<span><strong>Perrea.</strong> Envolturas de comida chatarra recicladas, sobre tela. 76x127cm. 2012</span>',
+	    		helpers : {
+	    			title : {
+	    				type : 'inside'
+	    			}
+	    		}
+	    	});
+	    
+	    	$("#fancybox-violencia").fancybox({
+	    		title: '<span><strong>Violencia oral.</strong> Envolturas de comida chatarra recicladas, sobre tela. 76x127cm. 2012</span>',
+	    		helpers : {
+	    			title : {
+	    				type : 'inside'
+	    			}
+	    		}
 	    	});
 	    	$("#fancybox-guilty").fancybox({
 	    		title: '<span><strong>Guilty pleasure.</strong> Envolturas de comida chatarra recicladas comprimidas. 27 cm x 43 cm x 16 cm. 2012</span>',
