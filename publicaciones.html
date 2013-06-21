@@ -36,8 +36,11 @@
 		<div id="example-one">
 		<div class="nav-izq">		
 			<ul class="nav">
-		        
-		        <li class="nav-one"><a href="#featured" class="current"><h3><span>Revista AAD Arte al día MEXICO Editorial 6.0 EDICION DE</span><br><span> ANIVERSARIO</span></h3>
+		        <li class="nav-ten"><a href="#artealdia" class="current"><h3><span>Revista Arte al día</span></h3>
+		        <p><span>Reseña exposición "Yo Código Comunidad" por Carlos-Blas Galindo</span></p>
+		         <h4><span>2013</span></h4></a></li>  
+		         
+		        <li class="nav-one"><a href="#featured"><h3><span>Revista AAD Arte al día MEXICO Editorial 6.0 EDICION DE</span><br><span> ANIVERSARIO</span></h3>
 		        <p><span>Pablo Llana: HABLANDO CON LA BOCA LLENA ENTRE LAS </span><br><span> FRONTERAS Y LOS MULTISENTIDOS, pag.24-25</span></p>
 		        <h4><span>Marzo-Abril 2013</span></h4></a></li>
 		        
@@ -61,7 +64,7 @@
 		   		<span>Lleva a la plástica su hartazgo cultural Pablo Llana.</span><br>
 		       <span>En MOUTHFUL satiriza el consumismo.</span></p></a></li> 
 		       
-		       <li class="nav-six"><a href="#jquerytuts">
+		       <li class="nav-six"><a href="#cornucopia">
 		       <h3><span>Portada del libro “CORNUCOPIA”</span></h3>
 		       <p><span>Periodismo sonoro y anexas de Octavio Hernández Díaz,</span><br><span>“Chewed Landscape” 2012,</span><br><span>COLECCIÓN DIVULGACION CULTURAL,  CECUT CONACULTA</span></p></a></li>
 		         
@@ -70,14 +73,15 @@
 		       <p><span>El arte satírico de Pablo Llana (portada y entrevista)</span></p>
 		       <h4><span>Febrero 2010</span></h4></a></li>
 		         
-		       <li class="nav-eight"><a href="#jquerytuts">
+		       <li class="nav-eight"><a href="#obranegra">
 		       <h3><span>Obra Negra</span></h3>
 		       <p><span>una aproximación a la construcción de la cultura visual de</span><br><span> Tijuana, El cubo, Centro Cultural Tijuana (catálogo)</span></p>
 		       <h4><span>2011</span></h4></a></li>
 		       
-		       <li class="nav-nine"><a href="#jquerytuts"><h3><span>Los Angeles Times</span></h3>
+		       <li class="nav-nine"><a href="#losangeles"><h3><span>Los Angeles Times</span></h3>
 		      <p><span>From nine Tijuana Artists: Perspectives as fresh as paint.</span></p>
-		       <h4><span>Noviembre 2001</span></h4></a></li>    
+		       <h4><span>Noviembre 2001</span></h4></a></li> 
+		      
 		    </ul>
 		</div>
 		<div class="list-wrap">
@@ -105,9 +109,21 @@
 			<img alt="noticiasnet.mx"  src="_/images/publicaciones/oaxaca2.jpg"/>
 			<a  target="_new" href="http://www.tablet.noticiasnet.mx/sites/default/files/flipping_book/oax/2013/02/20/secc_c/files/assets/basic-html/page8.html">[ ver más ]</a>
 			</div>
+			<div id="cornucopia" class="hide">
+			<img alt="cornucopia" src="_/images/publicaciones/cornucopia.jpg"/><br>
+			<a id="fancybox-cornucopia" href="_/images/publicaciones/cornucopia-g.jpg">[ ver más ]</a>
+			</div>
 			<div id="tijuaneo" class="hide">
 			<img alt="tijuaneo" src="_/images/publicaciones/tijuaneo.jpg"/><br>
 			<a  target="_new" href="#">[ ver más ]</a>
+			</div>
+			<div id="obranegra" class="hide">
+			<img alt="obranegra" src="_/images/publicaciones/obranegra.jpg"/><br>
+			<a id="fancybox-obranegra" href="_/images/publicaciones/obranegra-g.jpg">[ ver más ]</a>
+			</div>
+			<div id="losangeles" class="hide">
+			<img alt="Los Angeles Times" src="_/images/publicaciones/losangeles.jpg"/><br>
+			<a id="fancybox-losangeles" href="_/images/publicaciones/losangeles-g.jpg">[ ver más ]</a>
 			</div>
 			
 		</div> <!-- END List Wrap -->
@@ -145,7 +161,10 @@
 	        $("#example-one").organicTabs();
 
 	    });
-	    $('#fancybox-pdf').fancybox();	
+	    $('#fancybox-pdf').fancybox();
+	    $('#fancybox-obranegra').fancybox();
+	    $('#fancybox-losangeles').fancybox();
+	    $('#fancybox-cornucopia').fancybox();	
 	</script>
 </body>
 </html>
